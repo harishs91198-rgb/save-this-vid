@@ -11,7 +11,7 @@ RUN npm install
 
 COPY . .
 
-RUN pip3 install yt-dlp
+RUN pip3 install --break-system-packages yt-dlp
 
 EXPOSE 5000
 
