@@ -13,6 +13,6 @@ COPY . .
 
 RUN pip3 install --break-system-packages yt-dlp
 
-EXPOSE 5000
+EXPOSE 8080
 
 CMD ["node", "index.js"]
