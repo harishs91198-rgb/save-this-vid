@@ -7,8 +7,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.send("Backend working");
+app.get("/test", (req, res) => {
+    res.send("Server alive");
 });
 
 app.post("/api/download", (req, res) => {
@@ -37,7 +37,7 @@ app.post("/api/download", (req, res) => {
     }
 
     const ytDlp = spawn(
-        "python",
+        "python3",
         [
             "-m",
             "yt_dlp",
@@ -136,7 +136,7 @@ app.get("/api/file", (req, res) => {
     }
 
     const ytDlp = spawn(
-        "python",
+        "python3",
         [
             "-m",
             "yt_dlp",
