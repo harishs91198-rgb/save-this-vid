@@ -6,7 +6,11 @@ const app = express();
 app.get("/", (req, res) => {
     res.send("Backend working");
 });
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin:
+   "https://save-this-vid.vercel.app"
+}));
 app.use(express.json());
 
 app.get("/test", (req, res) => {
@@ -28,6 +32,7 @@ app.post("/api/download", (req, res) => {
     const valid =
         url.includes("x.com") ||
         url.includes("twitter.com") ||
+        url.includes("tiktok.com") ||
         url.includes("instagram.com");
 
     if (!valid) {
