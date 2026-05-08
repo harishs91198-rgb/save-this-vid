@@ -3,7 +3,9 @@ const cors = require("cors");
 const { spawn } = require("child_process");
 
 const app = express();
-
+app.get("/", (req, res) => {
+    res.send("Backend working");
+});
 app.use(cors());
 app.use(express.json());
 
