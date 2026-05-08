@@ -61,14 +61,13 @@ app.post("/api/download", (req, res) => {
 
     ytDlp.on("close", () => {
 
-        if (errorData) {
+        if (data.trim() === "") {
 
             console.log(errorData);
 
             return res.status(500).json({
                 success: false,
-                error:
-                    "Instagram may require login or rate limit exceeded"
+                error: "Failed to fetch video"
             });
         }
 
