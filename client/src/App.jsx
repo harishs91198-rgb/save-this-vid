@@ -222,6 +222,7 @@ export default function App() {
                 text-xl
                 font-semibold
                 mb-4
+                text-zinc
               ">
                 {data.title}
               </h2>
