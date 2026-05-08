@@ -34,7 +34,7 @@ export default function App() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/download",
+        "https://save-this-vid-production-121.up.railway.app/api/download",
         { url }
       );
 
@@ -222,7 +222,7 @@ export default function App() {
 
                   <a
                     key={i}
-                    href={`http://localhost:5000/api/file?url=${encodeURIComponent(url)}`} download
+                    href={`https://save-this-vid-production-121.up.railway.app/api/file?url=${encodeURIComponent(url)}`} download
                     target="_blank"
                     rel="noreferrer"
                     className="
