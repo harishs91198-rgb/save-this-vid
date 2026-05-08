@@ -75,19 +75,24 @@ export default function App() {
         p-6
         shadow-2xl
         border
-        border-white/10
+        border-[#1F51FF]/60
       ">
 
         <h1 className="
           text-4xl
           font-bold
           text-center
-          mb-8
+          mb-8 !text-zinc-100
         ">
           {detectPlatform(url)} Downloader
         </h1>
 
-        <div className="flex gap-3">
+        <div className="
+            flex
+            flex-col
+            sm:flex-row
+            gap-3
+          ">
 
           <input
             value={url}
@@ -123,12 +128,15 @@ export default function App() {
 
             }}
             className="
-    px-4
-    rounded-xl
-    bg-zinc-700
-    hover:bg-zinc-600
-    transition
-  "
+              w-full
+              sm:w-auto
+              px-4
+              py-4
+              rounded-xl
+              bg-zinc-700
+              hover:bg-zinc-600
+              transition
+            "
           >
             Paste
           </button>
@@ -136,7 +144,10 @@ export default function App() {
             disabled={loading}
             onClick={fetchVideo}
             className="
+              w-full
+              sm:w-auto
               px-6
+              py-4
               rounded-xl
               bg-blue-600
               hover:bg-blue-500
