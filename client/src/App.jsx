@@ -230,7 +230,7 @@ export default function App() {
               <div className="
                 flex
                 flex-wrap
-                gap-3
+                gap-3 hidden
               ">
 
                 {data.formats.map((f, i) => (
