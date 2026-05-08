@@ -75,7 +75,7 @@ export default function App() {
         p-6
         shadow-2xl
         border
-        border-red/10
+        border-white/10
       ">
 
         <h1 className="
