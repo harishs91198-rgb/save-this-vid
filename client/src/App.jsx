@@ -222,7 +222,7 @@ export default function App() {
                 text-xl
                 font-semibold
                 mb-4
-                text-zinc
+                text-zinc hidden
               ">
                 {data.title}
               </h2>
@@ -230,7 +230,7 @@ export default function App() {
               <div className="
                 flex
                 flex-wrap
-                gap-3 hidden
+                gap-3
               ">
 
                 {data.formats.map((f, i) => (
