@@ -116,6 +116,9 @@ export default function App() {
               px-4
               py-4
               outline-none
+              text-sm
+              sm:text-base
+              placeholder:text-zinc-500
             "
           />
           <button
